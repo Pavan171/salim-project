@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    a {
+      color: #f1c40f;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thanks, {{ name }}!</h1>
+  <p>Your review for "<strong>{{ movie }}</strong>" has been submitted.</p>
+  <br>
+  <a href="/">Back to Home</a> | <a href="/reviews">View All Reviews</a>
+</body>
+</html>
+

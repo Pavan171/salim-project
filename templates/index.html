@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Review App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #6c5ce7;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit Your Movie Review</h1>
+  <form method="POST" action="/submit">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="text" name="movie" placeholder="Movie Title" required><br>
+    <button type="submit">Submit Review</button>
+  </form>
+  <br><br>
+  <a href="/reviews" style="color: white; text-decoration: underline;">View All Reviews</a>
+</body>
+</html>
+
